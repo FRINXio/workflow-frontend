@@ -1,5 +1,5 @@
 import express from "express";
-import kClient from "./keycloakClient";
+import kClient from "keycloak-client";
 
 const RETRY_TIME = 5 * 1000; // 5 seconds
 

@@ -1733,6 +1733,11 @@ keycloak-admin@^1.13.0:
     url-join "^4.0.0"
     url-template "^2.0.8"
 
+keycloak-client@../keycloak-client/:
+  version "1.0.0"
+  dependencies:
+    keycloak-admin "^1.13.0"
+
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
