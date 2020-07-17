@@ -5,7 +5,7 @@ import WorkflowApp from "frinx-workflow-ui/lib/App";
 import WorkflowServiceApp from "frinx-workflow-ui/lib/ServiceUiApp";
 import { HttpClient as http } from "frinx-workflow-ui/lib/common/HttpClient";
 
-const conductorApiUrlPrefix = "/workflow/proxy/proxy/api";
+const conductorApiUrlPrefix = "/workflow/proxy";
 const conductorRbacApiUrlPrefix = "/workflow/proxy/rbac/editableworkflows";
 const frontendUrlPrefix = "/workflow/frontend";
 

@@ -7,6 +7,6 @@ COPY workflow-frontend /workflow-frontend
 WORKDIR /workflow-frontend
 # Clean up already installed stuff
 RUN rm -rf node_modules
-RUN npm install
+RUN yarn install
 
-CMD npm start
+CMD yarn start
