@@ -5,6 +5,7 @@ module.exports = {
   devServer: {
     historyApiFallback: { index: '/workflow/frontend/' },
     inline: true,
+    injectClient: false,
     hot: true,
     open: true,
     port: 5000,

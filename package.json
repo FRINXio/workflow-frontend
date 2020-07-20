@@ -22,8 +22,8 @@
     "webpack-dev-server": "3.10.3"
   },
   "scripts": {
-    "start": "yarn start:dev",
     "start:dev": "webpack-dev-server --mode development",
+    "build": "webpack --config ./webpack.config.js --progress --profile --colors",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
