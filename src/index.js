@@ -5,9 +5,12 @@ import WorkflowApp from "frinx-workflow-ui/lib/App";
 import WorkflowServiceApp from "frinx-workflow-ui/lib/ServiceUiApp";
 import { HttpClient as http } from "frinx-workflow-ui/lib/common/HttpClient";
 
-const conductorApiUrlPrefix = "/workflow/proxy";
 const conductorRbacApiUrlPrefix = "/workflow/proxy/rbac/editableworkflows";
+const conductorApiUrlPrefix = "/workflow/proxy";
 const frontendUrlPrefix = "/workflow/frontend";
+const enableScheduling = true;
+const disabledTasks = ['lambda'];
+const prefixHttpTask = 'GLOBAL___';
 
 http.get(conductorRbacApiUrlPrefix).then(isPrivileged => {
   let elementToRenderInto = document.getElementById("root");
@@ -17,7 +20,9 @@ http.get(conductorRbacApiUrlPrefix).then(isPrivileged => {
         <WorkflowApp
             backendApiUrlPrefix={conductorApiUrlPrefix}
             frontendUrlPrefix={frontendUrlPrefix}
-            enableScheduling={true}
+            enableScheduling={enableScheduling}
+            disabledTasks={disabledTasks}
+            prefixHttpTask={prefixHttpTask}
         />,
         elementToRenderInto
     );
@@ -26,7 +31,7 @@ http.get(conductorRbacApiUrlPrefix).then(isPrivileged => {
         <WorkflowServiceApp
             backendApiUrlPrefix={conductorApiUrlPrefix}
             frontendUrlPrefix={frontendUrlPrefix}
-            enableScheduling={true}
+            enableScheduling={enableScheduling}
         />,
         elementToRenderInto
     );
