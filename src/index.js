@@ -5,7 +5,10 @@ import WorkflowApp from "frinx-workflow-ui/lib/App";
 import WorkflowServiceApp from "frinx-workflow-ui/lib/ServiceUiApp";
 import { HttpClient as http } from "frinx-workflow-ui/lib/common/HttpClient";
 
+// This is used to determine whether a user has admin rights
 const conductorRbacApiUrlPrefix = "/workflow/proxy/rbac/editableworkflows";
+// This is used to make calls in case user is not an admin
+const conductorApiRbacProxyUrlPrefix = "/workflow/proxy/rbac";
 const conductorApiUrlPrefix = "/workflow/proxy";
 const frontendUrlPrefix = "/workflow/frontend";
 const enableScheduling = true;
@@ -29,7 +32,7 @@ http.get(conductorRbacApiUrlPrefix).then(isPrivileged => {
   } else {
     ReactDOM.render(
         <WorkflowServiceApp
-            backendApiUrlPrefix={conductorApiUrlPrefix}
+            backendApiUrlPrefix={conductorApiRbacProxyUrlPrefix}
             frontendUrlPrefix={frontendUrlPrefix}
             enableScheduling={enableScheduling}
         />,
