@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "author": "Ken Garber <kengarber@fb.com>",
+  "license": "BSD-3-Clause-No-Nuclear-Warranty",
   "homepage": "/workflow/frontend",
   "private": true,
   "dependencies": {
