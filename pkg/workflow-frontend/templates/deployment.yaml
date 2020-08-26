@@ -30,8 +30,8 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           # Use for debugging
-          # command: ["/bin/sh"]
-          # args: ["-c", "yarn run start:dev"]
+          command: ["/bin/sh"]
+          args: ["-c", "yarn run start:dev"]
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
