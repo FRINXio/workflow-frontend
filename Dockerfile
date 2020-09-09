@@ -2,14 +2,12 @@ FROM nginx:alpine
 
 EXPOSE 5000
 
-COPY workflow-frontend /workflow-frontend
+RUN apk add yarn
 
 WORKDIR /workflow-frontend
-# Clean up already installed stuff
-RUN rm -rf node_modules
+COPY . .
 
-RUN apk add yarn
-RUN yarn install
+RUN yarn install --frozen-lockfile && yarn cache clean
 RUN yarn build
 
 RUN rm -rf /usr/share/nginx/html
