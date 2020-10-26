@@ -10,7 +10,7 @@
     "babel-polyfill": "^6.26.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
-    "frinx-workflow-ui": "1.1.58",
+    "frinx-workflow-ui": "1.1.59",
     "html-loader": "^1.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.8.4",
