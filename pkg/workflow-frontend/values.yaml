@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: facebookconnectivity-hub-docker.jfrog.io/workflow_frontend
+  name: workflow_frontend
   # set to "Always" because using "latest" tag
   # https://github.com/kubernetes/kubernetes/issues/47775
   pullPolicy: Always
