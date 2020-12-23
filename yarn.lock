@@ -5661,10 +5661,10 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
-frinx-workflow-ui@1.1.64:
-  version "1.1.64"
-  resolved "https://registry.yarnpkg.com/frinx-workflow-ui/-/frinx-workflow-ui-1.1.64.tgz#548c9da5085192ffabf879caa706fff5c32f68bb"
-  integrity sha512-UOmmnr79dz623psgYtDtNZYgYII40k98VS/phrQWSU1SwSwLe5MwqXg2NHHmeOsVy56CqvX0DI2WE/Jq6aFv5g==
+frinx-workflow-ui@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/frinx-workflow-ui/-/frinx-workflow-ui-1.2.0.tgz#06cea63f6851c969f57df02e9e141a4fe71946e0"
+  integrity sha512-WAxUaRGa70TeHdsx9sGd+Az6K9Mtq3hyHmLG+Dh1EwY3C0ouHrvOAtu8pcxpOEGs4biM06efSCiAGNPwuyhang==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.8.3"
     "@babel/plugin-transform-runtime" "^7.9.0"
@@ -5691,13 +5691,11 @@ frinx-workflow-ui@1.1.64:
     node-sass "^4.14.1"
     pathfinding "^0.4.18"
     paths-js "^0.4.10"
-    react "^16.8.4"
     react-ace latest
     react-bootstrap "^1.0.0-beta.8"
     react-bootstrap-typeahead "^3.4.5"
     react-codemirror2 "^7.2.1"
     react-contexify "^4.1.1"
-    react-dom "^16.8.4"
     react-dropdown "^1.6.4"
     react-highlight.js "^1.0.7"
     react-hotkeys "^2.0.0-pre9"
