@@ -5661,10 +5661,10 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
-frinx-workflow-ui@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/frinx-workflow-ui/-/frinx-workflow-ui-1.2.0.tgz#06cea63f6851c969f57df02e9e141a4fe71946e0"
-  integrity sha512-WAxUaRGa70TeHdsx9sGd+Az6K9Mtq3hyHmLG+Dh1EwY3C0ouHrvOAtu8pcxpOEGs4biM06efSCiAGNPwuyhang==
+frinx-workflow-ui@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/frinx-workflow-ui/-/frinx-workflow-ui-1.2.1.tgz#c569e5f43ca8947115412de2c9e6f5d36b8211d6"
+  integrity sha512-my/d1JSfx1Rtsfbz7LA2szsQvwXxGd/3tj+kPlEVwlbTdr6kdpBjIvVk3hnJdpUq4Vhs8NdVZMjyc4s3Ed1Yxg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.8.3"
     "@babel/plugin-transform-runtime" "^7.9.0"
