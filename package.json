@@ -1,6 +1,6 @@
 {
   "name": "workflow-frontend",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.js",
   "author": "Ken Garber <kengarber@fb.com>",
   "license": "BSD-3-Clause",
@@ -10,7 +10,7 @@
     "babel-polyfill": "^6.26.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
-    "frinx-workflow-ui": "^1.2.2",
+    "frinx-workflow-ui": "^1.2.3",
     "html-loader": "^1.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.8.4",
